@@ -205,7 +205,6 @@ header {
         margin-left: 210px;
         margin-top: 10px;
     }
-
     .header-social-logos {
         margin: 0 0 0 auto;
         padding: 0;
@@ -217,8 +216,6 @@ header {
         display: none;
     }
 }
-
-
 @media (min-width: 900px) {
     .container h1 {
         margin-left: 30px;
