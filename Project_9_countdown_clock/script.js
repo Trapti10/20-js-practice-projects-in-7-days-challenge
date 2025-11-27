@@ -27,7 +27,7 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".time-value")
 
-let futureDate = new Date(2025, 10, 30, 11, 30, 0);
+let futureDate = new Date(2029, 10, 30, 11, 30, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours()
 const mins = futureDate.getMinutes()
@@ -43,9 +43,15 @@ const futureTime = futureDate.getTime()
 //current time in ms
 function getremainTime(){
     const today  = new Date().getTime();
-    const t = futureTime - today;  //difference b/w today and future time
+    const t = futureTime - today;  //difference b/w today and future time 
 
-    // values in ms
+    // 1s = 1000ms
+    // 1m = 60s 
+    // 1hr = 60m
+    // 1d =24hr
+
+    
+        // values in ms
     const oneDay = 24*60*60*1000;
     const oneHour = 60*60*1000;
     const oneMinute = 60*1000;
@@ -72,6 +78,12 @@ function getremainTime(){
     items.forEach(function(item,index){
         item.innerHTML = format(values[index]);
     })
+
+    if(t<0){
+        clearInterval(countdown);
+        deadline.innerHTML = `<h4 class="Expired">Sorry, this giveaway has expired</h4>`
+      
+    }
 }
 
 // countdown
