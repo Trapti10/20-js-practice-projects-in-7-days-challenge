@@ -27,7 +27,13 @@ const giveaway = document.querySelector(".giveaway");
 const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".time-value")
 
-let futureDate = new Date(2029, 10, 30, 11, 30, 0);
+let tempDate = new Date()
+let tempYear = tempDate.getFullYear();
+let tempMonth = tempDate.getMonth()
+let tempDay = tempDate.getDate()
+
+
+const futureDate = new Date(tempYear, tempMonth, tempDay + 10, 11, 30, 0);
 const year = futureDate.getFullYear();
 const hours = futureDate.getHours()
 const mins = futureDate.getMinutes()
@@ -50,8 +56,7 @@ function getremainTime(){
     // 1hr = 60m
     // 1d =24hr
 
-    
-        // values in ms
+    // values in ms
     const oneDay = 24*60*60*1000;
     const oneHour = 60*60*1000;
     const oneMinute = 60*1000;
@@ -90,4 +95,3 @@ function getremainTime(){
 let countdown = setInterval(getremainTime, 1000);
 
 getremainTime();
-
