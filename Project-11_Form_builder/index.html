@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 class="title">Form Builder</h1>
+
+<div class="builder-container">
+    <div class="inputFields">
+        <select id="fieldType">
+            <option value="Text">Text</option>
+            <option value="Email">Email</option>
+            <option value="Number">Number</option>
+            <option value="Textarea">Textarea</option>
+            <option value="Checkbox">Checkbox</option>
+        </select>
+
+        <input class="inputText" type="text" placeholder="Enter Label...">
+        <button class="addBtn">Add Field</button>
+        <p class="error"></p>
+    </div>
+
+    <h3 class="preview-title">Form Preview</h3>
+
+    <form class="formPreview"></form>
+
+    <div class="action-buttons">
+        <button class="submitBtn">Submit</button>
+        <button class="clearBtn">Clear All</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

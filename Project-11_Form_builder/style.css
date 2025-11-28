@@ -1,0 +1,149 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    padding: 20px;
+    place-items: center;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.builder-container {
+    background: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 650px;
+    border-radius: 12px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.inputFields select,
+.inputFields input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 10px;
+}
+
+
+button {
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+}
+
+.addBtn {
+    background: #4e73df;
+    color: white;
+}
+
+.addBtn:hover {
+    background: #3b5cc5;
+}
+
+.submitBtn {
+    background: #1cc88a;
+    color: white;
+}
+
+.submitBtn:hover {
+    background: #17a674;
+}
+
+.clearBtn {
+    background: #e74a3b;
+    color: white;
+}
+
+.clearBtn:hover {
+    background: #c0392b;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.preview-title {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.formPreview {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.box {
+    padding: 15px;
+    background: #fdfdfd;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+}
+
+.box label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.inputField {
+    margin-top: 8px;
+    padding: 8px;
+    width: 97%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.field-Action {
+    margin-top: 12px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.field-Action button {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+.field-Action button:nth-child(1) {
+    background: #e74a3b;
+    color: white;
+}
+
+.field-Action button:nth-child(2) {
+    background: #f6c23e;
+}
+
+.field-Action button:nth-child(3) {
+    background: #36b9cc;
+}
+
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
