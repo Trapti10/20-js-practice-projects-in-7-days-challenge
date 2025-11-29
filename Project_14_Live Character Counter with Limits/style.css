@@ -1,0 +1,95 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f3f6fa;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.tweet-box {
+    width: 450px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+textarea {
+    width: 93%;
+    height: 130px;
+    padding: 15px;
+    border: 2px solid #d0d7e2;
+    border-radius: 10px;
+    font-size: 16px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #1da1f2;
+}
+
+.info-row {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.warnings p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.hide {
+    display: none;
+}
+
+.counters {
+    text-align: right;
+    font-size: 14px;
+}
+
+.char-count {
+    display: block;
+    font-weight: 600;
+}
+
+.word-count {
+    color: gray;
+    font-size: 13px;
+}
+
+.btn-row {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.clear-btn {
+    background: #e5e8eb;
+}
+
+.post-btn {
+    background: #70c0f2;
+    color: white;
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.post-btn.enabled {
+    opacity: 1;
+}
+
+.post-btn:disabled {
+    cursor: not-allowed;
+}
